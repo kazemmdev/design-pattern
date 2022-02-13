@@ -5,7 +5,7 @@ allows subclasses to alter the type of objects that will be created.
 
 ## Structure
 
-<img src="/home/kazem/k90mirzaei/projects/DesignPatterns/FactoryMethod/assets/fm.jpg" alt="Factory Method"/>
+<img src="assets/fm.jpg" alt="Factory Method"/>
 
 ## How to Implement
 
