@@ -3,9 +3,14 @@
 Factory Method is a creational design pattern that provides an interface for creating objects in a superclass, but
 allows subclasses to alter the type of objects that will be created.
 
+## Problem
+
+Adding a new class(product) to the program isn’t that simple if the rest of the code is already coupled to existing
+classes. so sometime for extend usability of our programs we use this pattern
+
 ## Structure
 
-<img src="assets/fm.jpg" alt="Factory Method"/>
+<img src="assets/scheme.jpg" alt="Factory Method"/>
 
 ## How to Implement
 
@@ -21,3 +26,10 @@ allows subclasses to alter the type of objects that will be created.
 - If, after all the extractions, the base factory method has become empty, you can make it abstract. If there’s
   something left, you can make it a default behavior of the method.
 
+# Real World Example
+
+In this example, the Factory Method pattern provides an interface for creating social network connectors, which can be
+used to log in to the network, create posts and potentially perform other activities—and all of this without coupling
+the client code to specific classes of the particular social network.
+
+<img src="assets/uml.png" alt="Factory Method"/>

@@ -1,0 +1,29 @@
+{
+  "name": "k90mirzaei/design-patterns",
+  "description": "This is a review of design patterns in PHP",
+  "authors": [
+    {
+      "name": "Kazem Mirzaei",
+      "email": "k90mirzaei@gmail.com"
+    }
+  ],
+  "require": {
+    "php": ">=7.4",
+    "ext-json": "*"
+  },
+  "require-dev": {
+    "orchestra/testbench": "^6.24"
+  },
+  "license": "MIT",
+  "minimum-stability": "stable",
+  "scripts": {
+    "test": "vendor/bin/phpunit"
+  },
+  "autoload": {
+    "classmap": [
+      "Behavioral",
+      "Creational",
+      "Structural"
+    ]
+  }
+}
