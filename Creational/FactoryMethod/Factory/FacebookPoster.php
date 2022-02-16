@@ -1,6 +1,9 @@
 <?php
 
-namespace DesignPatterns\Creational\FactoryMethod;
+namespace DesignPatterns\Creational\FactoryMethod\Factory;
+
+use DesignPatterns\Creational\FactoryMethod\FacebookConnector;
+use DesignPatterns\Creational\FactoryMethod\SocialNetworkConnector;
 
 /**
  * This Concrete Creator supports Facebook. Remember that this class also
@@ -9,7 +12,8 @@ namespace DesignPatterns\Creational\FactoryMethod;
  */
 class FacebookPoster extends SocialNetworkPoster
 {
-    private $login, $password;
+    private string $login;
+    private string $password;
 
     public function __construct(string $login, string $password)
     {

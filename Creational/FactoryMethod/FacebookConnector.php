@@ -7,7 +7,8 @@ namespace DesignPatterns\Creational\FactoryMethod;
  */
 class FacebookConnector implements SocialNetworkConnector
 {
-    private $login, $password;
+    private string $login;
+    private string $password;
 
     public function __construct(string $login, string $password)
     {
@@ -17,17 +18,16 @@ class FacebookConnector implements SocialNetworkConnector
 
     public function logIn(): void
     {
-        echo "\n\nSend HTTP API request to log in user $this->login with " .
-            "password $this->password\n";
+        // todo: Send HTTP API request to log in user $this->login with password $this->password"
     }
 
     public function logOut(): void
     {
-        echo "Send HTTP API request to log out user $this->login\n";
+        // todo:  "Send HTTP API request to log out user $this->login";
     }
 
     public function createPost($content): void
     {
-        echo "Send HTTP API requests to create a post in Facebook timeline.\n";
+        // todo:  "Send HTTP API requests to create a post in Facebook timeline.";
     }
 }

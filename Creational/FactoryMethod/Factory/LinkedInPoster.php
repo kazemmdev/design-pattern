@@ -1,13 +1,17 @@
 <?php
 
-namespace DesignPatterns\Creational\FactoryMethod;
+namespace DesignPatterns\Creational\FactoryMethod\Factory;
+
+use DesignPatterns\Creational\FactoryMethod\LinkedInConnector;
+use DesignPatterns\Creational\FactoryMethod\SocialNetworkConnector;
 
 /**
  * This Concrete Creator supports LinkedIn.
  */
 class LinkedInPoster extends SocialNetworkPoster
 {
-    private $email, $password;
+    private string $email;
+    private string $password;
 
     public function __construct(string $email, string $password)
     {

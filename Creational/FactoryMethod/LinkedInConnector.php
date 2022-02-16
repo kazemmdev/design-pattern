@@ -8,7 +8,8 @@ namespace DesignPatterns\Creational\FactoryMethod;
  */
 class LinkedInConnector implements SocialNetworkConnector
 {
-    private $email, $password;
+    private string $email;
+    private string $password;
 
     public function __construct(string $email, string $password)
     {
@@ -18,17 +19,16 @@ class LinkedInConnector implements SocialNetworkConnector
 
     public function logIn(): void
     {
-        echo "\n\nSend HTTP API request to log in user $this->email with " .
-            "password $this->password\n";
+        // todo:  "Send HTTP API request to log in user $this->email with password $this->password";
     }
 
     public function logOut(): void
     {
-        echo "Send HTTP API request to log out user $this->email\n";
+        // todo:  "Send HTTP API request to log out user $this->email";
     }
 
     public function createPost($content): void
     {
-        echo "Send HTTP API requests to create a post in LinkedIn timeline.\n";
+        // todo:  "Send HTTP API requests to create a post in LinkedIn timeline.";
     }
 }
