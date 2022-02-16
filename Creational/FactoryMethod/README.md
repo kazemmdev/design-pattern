@@ -1,6 +1,6 @@
 # Factory Method
 
-Factory Method is a creational design pattern that provides an interface for creating objects in a superclass, but
+**Factory Method** is a creational design pattern that provides an interface for creating objects in a superclass, but
 allows subclasses to alter the type of objects that will be created.
 
 ## Problem
@@ -32,4 +32,4 @@ In this example, the Factory Method pattern provides an interface for creating s
 used to log in to the network, create posts and potentially perform other activities—and all of this without coupling
 the client code to specific classes of the particular social network.
 
-<img src="assets/uml.png" alt="Factory Method"/>
+<img src="assets/uml.png" alt="Factory Method Example"/>
