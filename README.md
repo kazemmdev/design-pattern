@@ -12,13 +12,11 @@ blueprints that you can customize to solve a recurring design problem in your co
 >  - [Prototype](Creational/Prototype/README.md)
 >  - [Singleton](Creational/Singleton/README.md)
 
-
 ## Structural Design Pattern
 
 > patterns explain how to assemble objects and classes into larger structures, while keeping the structures flexible and
-> efficient. 
+> efficient.
 >  - [Adapter](Structural/Adapter/README.md)
-
 
 ## Behavioral Design Pattern
 
