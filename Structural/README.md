@@ -1,2 +1,0 @@
-# Structural Design Pattern
-
