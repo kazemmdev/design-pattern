@@ -5,6 +5,10 @@ separate hierarchies—abstraction and implementation—which can be developed i
 
 ## Problem
 
+Suppose that you have some form creator class (ex. ProductInfo, UserInfo) and you want to extend its renderer like html,
+twig or anything else. Since both of the class hierarchies are separate designs without proper pattern could make
+diverse compound of classes.
+
 ## Structure
 
 <img src="assets/scheme.jpg" alt="Bridge"/>
