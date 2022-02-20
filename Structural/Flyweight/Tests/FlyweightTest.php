@@ -8,7 +8,7 @@ use Orchestra\Testbench\TestCase;
 class FlyweightTest extends TestCase
 {
     /** @test */
-    public function test_()
+    public function test_cat_variations_are_same()
     {
         $db = new CatDataBase();
         $db->addCat('name1', 'age1', 'owner1',
