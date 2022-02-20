@@ -17,9 +17,15 @@ blueprints that you can customize to solve a recurring design problem in your co
 > patterns explain how to assemble objects and classes into larger structures, while keeping the structures flexible and
 > efficient.
 >  - [Adapter](Structural/Adapter/README.md)
+>  - [Bridge](Structural/Bridge/README.md)
+>  - [Composite](Structural/Composite/README.md)
+>  - [Decorator](Structural/Decorator/README.md)
+>  - [Facade](Structural/Facade/README.md)
+>  - [Flyweight](Structural/Flyweight/README.md)
+>  - [Proxy](Structural/Proxy/README.md)
 
 ## Behavioral Design Pattern
 
 > patterns take care of effective communication and the assignment of responsibilities between objects. [
->  - [nothing](Behavioral/README.md)
+>  - [working](Behavioral/README.md)
 
