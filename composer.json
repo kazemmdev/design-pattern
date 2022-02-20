@@ -10,7 +10,8 @@
   "require": {
     "php": ">=7.4",
     "ext-json": "*",
-    "twig/twig": "^3.0"
+    "twig/twig": "^3.0",
+    "php-ffmpeg/php-ffmpeg": "^0.19.0"
   },
   "require-dev": {
     "orchestra/testbench": "^6.24"
