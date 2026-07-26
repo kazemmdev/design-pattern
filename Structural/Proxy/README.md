@@ -1,4 +1,4 @@
-# Flyweight
+# Proxy
 
 **Proxy** is a structural design pattern that lets you provide a substitute or placeholder for another object. A proxy
 controls access to the original object, allowing you to perform something either before or after the request gets
@@ -6,9 +6,17 @@ through to the original object.
 
 ## Problem
 
+Suppose you have an object that is expensive to use — it opens a network connection, reads a large file, or consumes a
+lot of memory — but you only need it some of the time. You could add lazy initialisation or caching directly to that
+class, but then every client pays for that code, and the class stops doing just one thing.
+
+You also can't always edit the class: it may come from a third-party package. The Proxy pattern lets you place a
+stand-in object with the *same interface* in front of the real one, so clients keep working unchanged while the proxy
+adds the caching, logging or access control around it.
+
 ## Structure
 
-<img src="assets/scheme.jpg" alt="Flyweight"/>
+<img src="assets/scheme.jpg" alt="Proxy"/>
 
 ## How to Implement
 
@@ -30,4 +38,8 @@ through to the original object.
 There are countless ways proxies can be used: caching, logging, access control, delayed initialization, etc. This
 example demonstrates how the Proxy pattern can improve the performance of a downloader object by caching its results.
 
-<img src="assets/uml.png" alt="Flyweight Example"/>
+`SimpleDownloader` is the real service: every call costs a round trip. `CachingDownloader` is the proxy — it implements
+the same `Downloader` interface, so clients can't tell the difference, but it only delegates on a cache miss. Repeated
+requests for the same URL are served from memory.
+
+<img src="assets/uml.png" alt="Proxy Example"/>
